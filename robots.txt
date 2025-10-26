@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://PLACEHOLDER_DOMINIO/sitemap.xml

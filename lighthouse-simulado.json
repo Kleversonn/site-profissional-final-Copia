@@ -1,0 +1,13 @@
+{
+  "Performance": 93,
+  "Accessibility": 96,
+  "Best Practices": 95,
+  "SEO": 98,
+  "Observações": [
+    "⚡ Use imagens em WebP/AVIF reais (substituir placeholders).",
+    "⚡ Minifique CSS/JS para melhorar ainda mais o tempo de carregamento.",
+    "⚡ Adicione sitemap.xml e robots.txt para SEO avançado.",
+    "⚡ Configure domínio real no canonical e og:url.",
+    "⚡ Teste com conexões 3G para garantir boa performance em mobile."
+  ]
+}

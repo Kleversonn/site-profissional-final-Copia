@@ -1,0 +1,17 @@
+[
+
+{
+"titulo": "Projeto Exemplo A11y + Perf",
+"categoria": ["acessibilidade", "performance"],
+"descricao": "Componente acessível com métricas de UX estáveis e LCP otimizado.",
+"tecnologias": ["HTML", "CSS", "JS"],
+"url": "https://PLACEHOLDER_DOMINIO/projetos/exemplo",
+"repo": "https://github.com/SEU_USUARIO/exemplo",
+"imagem": {
+ "jpg": "img/projeto1.jpg",
+ "webp": "img/projeto1.webp",
+ "avif": "img/projeto1.avif",
+ "alt": "Capa do projeto exemplo"
+}
+}
+]

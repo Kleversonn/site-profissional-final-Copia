@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Início — Portfólio de Seu Nome</title>
+<meta name="description" content="Portfólio profissional de Seu Nome: projetos, artigos, vídeos e contato. Especialista em desenvolvimento front-end, acessibilidade e performance.">
+<link rel="canonical" href="https://PLACEHOLDER_DOMINIO/">
+<meta property="og:title" content="Início — Portfólio de Seu Nome">
+<meta property="og:description" content="Portfólio profissional de Seu Nome: projetos, artigos, vídeos e contato.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Portfólio de Seu Nome">
+<meta property="og:url" content="https://PLACEHOLDER_DOMINIO/">
+<meta property="og:image" content="https://PLACEHOLDER_DOMINIO/assets/og-image.jpg">
+<!-- TODO: gerar imagem og-image.jpg (1200x630) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Início — Portfólio de Seu Nome">
+<meta name="twitter:description" content="Portfólio profissional de Seu Nome: projetos, artigos, vídeos e contato.">
+<meta name="twitter:image" content="https://PLACEHOLDER_DOMINIO/assets/og-image.jpg">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+<header role="banner" class="site-header">
+<div class="container header-inner">
+ <a class="logo" href="index.html" aria-label="Página inicial">Seu Nome</a>
+ <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu">Menu</button>
+ <nav id="site-nav" class="nav" role="navigation" aria-label="Menu principal">
+   <ul class="nav-list">
+     <li><a href="index.html" aria-current="page">Início</a></li>
+     <li><a href="sobre.html">Sobre</a></li>
+     <li><a href="projetos.html">Projetos</a></li>
+     <li><a href="artigos.html">Artigos</a></li>
+     <li><a href="videos.html">Vídeos</a></li>
+     <li><a href="certificacoes.html">Certificações</a></li>
+     <li><a href="contato.html">Contato</a></li>
+   </ul>
+ </nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero container">
+ <h1>Bem-vindo ao meu portfólio</h1>
+ <p>Desenvolvimento Front-end, Acessibilidade, SEO e Performance Web.</p>
+ <picture>
+   <source type="image/avif" srcset="img/hero.avif" />
+   <source type="image/webp" srcset="img/hero.webp" />
+   <img
+     src="img/hero.jpg"
+     alt="Ilustração representando desenvolvimento web de alta performance"
+     width="1200" height="600"
+     decoding="async"
+     fetchpriority="high"
+   />
+ </picture>
+ <!-- TODO: gerar WebP/AVIF -->
+</section>
+<section class="container">
+ <h2>Principais destaques</h2>
+ <ul class="highlights">
+   <li>WCAG 2.1 AA e boas práticas de UX</li>
+   <li>SEO técnico e dados estruturados</li>
+   <li>Performance 95+ no Lighthouse</li>
+ </ul>
+</section>
+</main>
+<footer role="contentinfo" class="site-footer">
+<div class="container">
+ <p>© <span id="year"></span> Seu Nome. Todos os direitos reservados.</p>
+</div>
+</footer>
+<script defer src=js/bundle.min.js></script>
+</body>
+</html>

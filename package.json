@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-estatico",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio estático otimizado (A11y, SEO, Performance) pronto para Netlify.",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=index.html",
+    "build:prep": "rimraf dist && mkdirp dist/css dist/js",
+    "build:css": "lightningcss --minify css/style.css -o dist/css/style.min.css",
+    "build:js": "terser js/*.js -o dist/js/bundle.min.js -c -m --toplevel",
+    "build:copy": "cpy index.html sobre.html projetos.html artigos.html videos.html certificacoes.html contato.html img/**/* favicon.ico dist --parents",
+    "build:rewrite": "node -e \"const fs=require('fs');const pages=['index.html','sobre.html','projetos.html','artigos.html','videos.html','certificacoes.html','contato.html'];pages.forEach(f=>{let s=fs.readFileSync('dist/'+f,'utf8');s=s.replace(/css\\/style\\.css/g,'css/style.min.css');s=s.replace(/<!-- scripts:start -->[\\s\\S]*?<!-- scripts:end -->/g,'<script defer src=\"js/bundle.min.js\"></script>');fs.writeFileSync('dist/'+f,s);});\"",
+    "build": "npm run build:prep && npm run build:css && npm run build:js && npm run build:copy && npm run build:rewrite",
+    "lighthouse": "lighthouse http://localhost:3000 --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=lh.json --chrome-flags='--headless=new'",      
+    "serve:dist": "live-server dist"
+},
+  "devDependencies": {
+    "cpy-cli": "^6.0.0",
+    "lighthouse": "^12.0.0",
+    "lightningcss-cli": "^1.24.0",
+    "live-server": "^1.2.0",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^5.0.5",
+    "terser": "^5.31.0"
+  }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato — Portfólio de Seu Nome</title>
+<meta name="description" content="Entre em contato com Seu Nome para projetos, consultoria e parcerias.">
+<link rel="canonical" href="https://PLACEHOLDER_DOMINIO/contato.html">
+<meta property="og:title" content="Contato — Portfólio de Seu Nome">
+<meta property="og:description" content="Converse comigo sobre projetos e oportunidades.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Portfólio de Seu Nome">
+<meta property="og:url" content="https://PLACEHOLDER_DOMINIO/contato.html">
+<meta property="og:image" content="https://PLACEHOLDER_DOMINIO/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contato — Portfólio de Seu Nome">
+<meta name="twitter:description" content="Entre em contato para projetos e parcerias.">
+<meta name="twitter:image" content="https://PLACEHOLDER_DOMINIO/assets/og-image.jpg">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+<header role="banner" class="site-header">
+<div class="container header-inner">
+ <a class="logo" href="index.html">Seu Nome</a>
+ <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu">Menu</button>
+ <nav id="site-nav" class="nav" role="navigation" aria-label="Menu principal">
+   <ul class="nav-list">
+     <li><a href="index.html">Início</a></li>
+     <li><a href="sobre.html">Sobre</a></li>
+     <li><a href="projetos.html">Projetos</a></li>
+     <li><a href="artigos.html">Artigos</a></li>
+     <li><a href="videos.html">Vídeos</a></li>
+     <li><a href="certificacoes.html">Certificações</a></li>
+     <li><a href="contato.html" aria-current="page">Contato</a></li>
+   </ul>
+ </nav>
+</div>
+</header>
+<main id="main" tabindex="-1" class="container">
+<h1>Contato</h1>
+<p>Preencha o formulário abaixo e retornarei em breve.</p>
+<form
+ name="contato"
+ method="POST"
+ action="/"
+ data-netlify="true"
+ netlify-honeypot="bot-field"
+ aria-describedby="form-desc"
+ class="contact-form"
+ <p id="form-desc" class="sr-only">Todos os campos marcados com * são obrigatórios.</p>
+ <input type="hidden" name="form-name" value="contato">
+ <div class="hidden">
+   <label for="bot-field">Não preencha este campo</label>
+   <input id="bot-field" name="bot-field" type="text" autocomplete="off">
+ </div>
+ <div class="field">
+   <label for="nome">Nome *</label>
+   <input id="nome" name="nome" type="text" required autocomplete="name">
+ </div>
+ <div class="field">
+   <label for="email">E-mail *</label>
+   <input id="email" name="email" type="email" required autocomplete="email" inputmode="email">
+ </div>
+ <div class="field">
+   <label for="assunto">Assunto</label>
+   <input id="assunto" name="assunto" type="text">
+ </div>
+ <div class="field">
+   <label for="mensagem">Mensagem *</label>
+   <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+ </div>
+ <div class="actions">
+   <button type="submit" class="btn">Enviar</button>
+ </div>
+ <p class="form-success" role="status" aria-live="polite" hidden>
+   Obrigado! Sua mensagem foi enviada com sucesso.
+ </p>
+ <p class="form-error" role="alert" hidden>
+   Ocorreu um erro ao enviar. Tente novamente.
+ </p>
+</form>
+</main>
+<footer role="contentinfo" class="site-footer">
+<div class="container">
+ <p>© <span id="year"></span> Seu Nome.</p>
+</div>
+</footer>
+<script defer src=js/bundle.min.js></script>
+</body>
+</html>
